@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+$font: 'Barlow Condensed', sans-serif;
+$fontBody: 'Barlow', sans-serif;
+$grayishBlue: hsl(231, 7%, 65%);
+$veryDarkBlue: hsl(230, 29%, 20%);
+$lightGrayishBlue: hsl(207, 33%, 95%);
+
+nav {
+    font-family: $font;
+}
+
+.nav-link {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: $veryDarkBlue;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+li {
+    @include media-breakpoint-up(lg){
+     margin-right: 5%;
+     margin-left: 5%;
+    }
+}
+
+.nav-first {
+    margin-top: 5%;
+    @include media-breakpoint-up(lg){
+        margin: 0;
+        margin-left: -40%;
+    }
+}
+
+.nav-login {
+   margin-bottom: 5%;
+    color: $grayishBlue !important;
+}
+body {
+    font-family: $fontBody;
+}
+
+.title {
+    margin-top: 25%;
+    margin-left: 5%;
+    color: $grayishBlue;
+    letter-spacing: 0.30rem;
+    font-size: 1rem;
+}
+
+.btnText {
+    color: $grayishBlue;
+    letter-spacing: 0.12rem;
+    font-size: 1rem;
+    margin-top: 5%;
+    @include media-breakpoint-up(lg){
+        margin-top: 7%;
+    }
+}
+
+.mainText {
+    margin-left: 5%;
+    color: $grayishBlue;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    width: 80%;
+    @include media-breakpoint-up(lg){
+        width: 65%;
+        margin-top: 5%;
+        font-size: 1.1rem;
+    }
+}
+
+.subtitle {
+    margin-left: 5%;
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: 3rem; 
+    font-family: $font;
+    @include media-breakpoint-up(lg){
+        font-size: 3.5rem;
+    }
+}
+
+.newText {
+    border: 1px solid;
+    border-radius: 1rem;
+    font-weight: 700;
+    background-color: $veryDarkBlue;
+    padding: 0.2rem 0.6rem;
+    color: $lightGrayishBlue;
+
+}
+
+.scheduleBtn {
+    font-family: $font;
+}

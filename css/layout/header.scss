@@ -1,0 +1,103 @@
+$lightGrayishBlue: hsl(207, 33%, 95%);
+$grayishBlue: hsl(231, 7%, 65%);
+
+.logo {
+    margin: 2%;
+    @include media-breakpoint-up(lg){
+      margin-left: 7%;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+    .navbar-collapse {
+     background-color: white;
+     margin-top: 8%; 
+     margin-right: 10%; 
+     margin-left: 10%;
+   @include media-breakpoint-up(lg){
+      background-color: transparent;
+      margin: 0;
+    }
+    }
+
+  .navbar {
+    position: absolute; 
+    width: 100%; 
+    z-index: 9999;
+    @include media-breakpoint-up(lg){
+     position: relative; 
+    }
+}
+
+hr.divider__mobile {
+  border-bottom: 1px solid $grayishBlue;
+  margin-left: 10%;
+  margin-right: 10%;
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
+}
+
+
+  body {
+    position: relative;
+    padding: 1rem;
+    overflow-x: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 450px;
+        width: 230px;
+        border-radius: 0 0 0 3.5rem;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-color: $lightGrayishBlue;
+        @include media-breakpoint-up(lg){
+            height: 400px;
+            width: 640px;
+            border-radius: 0 0 0 3.5rem;
+        }
+    }
+  }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ .mobileImg {
+  margin-top: 7rem;
+  width: clamp(500px, 29vw, 800px);
+  height: clamp(280px, 25vh, 550px);
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
+ }
+
+ .desktopImg {
+  display: none;
+  @include media-breakpoint-up(lg){
+    display: block;
+    @include media-breakpoint-up(lg){
+      margin-top: 7rem;
+      width: 850px;
+      height: 470px;
+     margin-left: 30%;
+    }
+  }
+ }
+
+.dot {
+  display: none;
+  @include media-breakpoint-up(lg){
+    display: block;
+    color: $grayishBlue !important;
+    font-weight: 400;
+  }
+}

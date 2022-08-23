@@ -1,0 +1,30 @@
+$red: hsl(0, 100%, 68%);
+
+.scheduleBtn {
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 95%;
+  background: $red;
+  border: 1px solid $red;
+  @include media-breakpoint-up(lg){
+    margin-top: 7%
+  }
+  &:hover {
+    background: $red;
+    border: 1px solid $red;
+    opacity: 0.7;
+  }
+}
+
+.text {
+  @include media-breakpoint-up(lg){
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+}
+
+.call {
+  @include media-breakpoint-up(lg){
+    margin-top: 10%;
+  }
+}
